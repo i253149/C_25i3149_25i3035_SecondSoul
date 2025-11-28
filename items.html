@@ -18,7 +18,7 @@
 </head>
 <body>
 </head>
-<body style="background-color: rgb(159, 111, 162);">
+<body style="background-color: white">
     <header>
 <form>
     <input type = "text" placeholder = "Search" style="margin-left: 40%; text-align:center; width:300px;height:25px">
@@ -32,7 +32,7 @@
 <a href="https://www.google.com/">
     <img src="https://i.postimg.cc/8z8WKzcY/shoppingcart.png" style="position: absolute; top:1% ; right:2% ;"> 
 </a>
-<h1 style="position:absolute;left:50%;transform:translateX(-50%);top:20%;font-family:'Kaushan Script', cursive;color:white;">
+<h1 style="position:absolute;left:50%;transform:translateX(-50%);top:20%;font-family:'Kaushan Script', cursive;color:rgb(159, 111, 162);">
         Second Soul
     </h1>
 <br>
@@ -41,6 +41,16 @@
 <pre style="font-size: 150%;">   Sale                              All                             Pants                           Shirts                      outwear</pre>
 <hr>
 </header>
+
+<main>
+    <label for="sort">Sort by:</label>
+        <select id="sort" name="sort">
+            <option value="name">Name</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+            <option value="date">Newest</option>
+        </select>
+</main>
     
 </body>
 </html>
