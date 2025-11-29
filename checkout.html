@@ -26,6 +26,18 @@
             width:40%;
             height:3%;
         }
+
+        input[type="radio"] {
+        width: 15px;   /* smaller width */
+        height: 15px;  /* smaller height */
+        vertical-align: middle; /* aligns nicely with text */
+        margin-right: 5px; /* space between button and text */
+    }
+    label {
+        font-size: 14px;
+        font-family: Arial, sans-serif;
+        margin-right: 20px; /* space between options */
+    }
     </style>
 </head>
 <body>
@@ -77,14 +89,52 @@
             <br>
             <br>
             <p>Payement Method</p>
-            <button type="submit"> Cash on delivery </button>
-        </form>
+           <label>
+        <input type="radio" name="payment" value="cod" onclick="hideOnlineOptions()">
+        Cash on Delivery
+    </label>
+
+    <label>
+        <input type="radio" name="payment" value="online" onclick="showOnlineOptions()">
+        Online Payment
+    </label>
+
+    <div id="onlineMethods" style="display:none; margin-top:10px; margin-left:20px;">
+        <label>
+            <input type="radio" name="onlineMethod" value="bank">
+            Bank Transfer
+        </label><br>
+        <label>
+            <input type="radio" name="onlineMethod" value="easypaisa">
+            Easypaisa
+        </label><br>
+        <label>
+            <input type="radio" name="onlineMethod" value="paypal">
+            PayPal
+        </label>
+    </div>
+    <br>
+    <br>
+    <br>
+        <button type="submitt"> Complete Order</button>
     </div>
     <div style="flex: 1; background-color: rgb(159, 111, 162);">
+        <pre style="font-size: 200%; font-weight: bold;">         Order summary:</pre>
+
     </div>
 </div>
 
 </maim>
 
 </body>
+
+<script>
+function showOnlineOptions() {
+    document.getElementById("onlineMethods").style.display = "block";
+}
+
+function hideOnlineOptions() {
+    document.getElementById("onlineMethods").style.display = "none";
+}
+</script>
 </html>
