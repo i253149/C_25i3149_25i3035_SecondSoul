@@ -4,12 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+         hr{
+            border:0;height:1px; background-color:black;opacity:o.1
+        }
+        img {
+            width: 50px; height: auto;
+        }
+        div{
+            position:relative;
+        }
+        p{
+            font-size: 100%;
+            font-weight: bold;
+            color: white;
+        }
+
+    </style>
+    
 </head>
 <body style="background-color: rgb(159, 111, 162);">
+    <header>
+<form>
+    <input type = "text" placeholder = "Search" style="margin-left: 40%; text-align:center; width:300px;height:25px">
+</form>
+
+<div>
+    <img src="https://i.postimg.cc/gcXWh0G4/sslogo.png" style=" width:8%;">
+<a href="login.html" style="position:absolute;top:1%;right:5%; text-decoration: none; color:white; font-size: 50%;">
+    <img src = "https://i.postimg.cc/3JtHG0PK/Profile-Icon-Silhouette-PNG-Transparent-Avatar-Icon-Profile-Icon-Member-Login-Vector-Isolated-Logi.png" >
+</a>
+<a href="https://www.google.com/">
+    <img src="https://i.postimg.cc/8z8WKzcY/shoppingcart.png" style="position: absolute; top:1% ; right:2% ;"> 
+</a>
+
+</div>
+<hr>
+</header>
+
     <div style="position: relative;">
         <img src="https://i.postimg.cc/VNM9Rbzr/Classic_Check_Fabric.png" style="width: 30%;">
         <a href="homepage.html">
-            <h1 style="position:absolute;top : 1%; right:2%; font-family: 'Kaushan Script', cursive; color:white; text-align: right;"> Second Soul</h1>
+            
             <p style="position:absolute; top:10%; left:40%; color:white; font-size:30px;">Login</p>
 
         </a>
@@ -17,7 +53,7 @@
         <br>
         <p style="position: absolute;top: 20%; left:40%; color: white;font-size: 20px;">Please login to your account</p>
         <h2 style="position: absolute; top: 30% ; left: 2%; translate: (-50,50); color:white; font-size: 70px;">Welcome</h2>
-        <form style="position: absolute; top: 30%; left:40%; ">
+        <form  style="position: absolute; top: 30%; left:40%; border: 2px solid white; padding: 60px; border-radius: 10px;">
             <input type ="text" placeholder = "Username">
             <br>
             <br>
@@ -25,12 +61,25 @@
             <input type = "password" placeholder = "Password">
             <br>
             <br>
+            <p style="color: white;font-size: 80%;text-decoration: underline; ">Forgot password?</p>
             <br>
             <br>
             <br>
             <br>
             <button type = "submit"> login</button>
+            <br>
+            <br>
+
+            <button type ="submit">Login with google</button>
+            <br>
+            <br>
+            <button type = "submitt"> Login with facebook</button>
+            <br>
+             <p style="font-size: 80%;">Dont have a account?</p>
+        <button type="submit">sign up</button>
         </form>
+
+       
     </div>
 </body>
 </html>
