@@ -21,6 +21,17 @@
             position:absolute; font-weight: bold;font-family: 'judson';color:black
 
         }
+        .footer-wrapper {
+            position: relative;text-align: center;
+}
+    .footer-bg {
+        width: 60%;height: 40vh;display: block;margin: 0 auto;
+}
+        .container{
+            display:flex; justify-content: flex-start;margin-top:20px;text-align: center;
+        }
+       .footer {
+        position: absolute;top: 10%;left: 50%;transform: translateX(-50%);width: 60%;display: flex;justify-content: space-between;text-align: left;}
     </style>
 </head>
 <body>
@@ -69,7 +80,7 @@
         <br>
         <br>
         <br>
-        <div style="display: flex; justify-content: flex-start; text-align: center; margin-top: 20px;">
+        <div class="container">
             <div>
                 <img src="https://i.postimg.cc/xdWgHGKk/Gemini-Generated-Image-9pxgas9pxgas9pxg.png" class=products>
                 <p>Green puffer jacket</p>
@@ -88,7 +99,7 @@
             </div>
 
         </div>
-        <div style="display: flex; justify-content: flex-start; text-align: center; margin-top: 20px;">
+        <div class="container">
             <div> 
                 <img src="https://i.postimg.cc/5097f5MH/Gemini-Generated-Image-2zf8xb2zf8xb2zf8.png" class="products">
                 <p>summer beach blue</p>
@@ -108,7 +119,7 @@
 
         </div>
 
-        <div style="display: flex; justify-content: flex-start; text-align: center; margin-top: 20px;">
+        <div class="container">
             <div> 
                 <img src="https://i.postimg.cc/NGm4ZPXj/Gemini-Generated-Image-w591c3w591c3w591.png" class="products">
                 <p>white tee</p>
@@ -128,7 +139,7 @@
 
         </div>
 
-        <div style="display:flex; justify-content: flex-start; text-align: center; margin-top: 20px">
+        <div class="container">
             <div>
                 <img src="https://i.postimg.cc/284Fk921/yoke-sweater.png" class="products">
                 <p>Yoke sweater</p>
@@ -166,7 +177,7 @@
 
         </div>
 
-        <div style="display:flex; justify-content: flex-start; text-align: center; margin-top: 20px">
+        <div class="container">
             <div>
                 <img src="https://i.postimg.cc/284Fk921/yoke-sweater.png" class="products">
                 <p>Yoke sweater</p>
@@ -184,48 +195,41 @@
             </div>
         </div>
 </main>
+<hr>
 <footer>
-    <br>
-<br>
-<br>
-   <div style="text-align: center; position: relative;">
-
-    <img src="https://i.postimg.cc/sxPL9xK8/whitebg.jpg"
-         style="width: 60%; height: 40vh; margin: 0 auto; display: block;">
-
-        <p class="text" style="top: 10%; right: 70%"> About us</p>
-        <p class="text" style="top: 10%; right: 50%"> Information</p>
-        <p class="text" style="top: 10%; right: 30%"> Customer care</p>
-
-        <p class="text" style="top: 30%; right: 72%"> 03123456789</p>
-        <br>
-        <br>
-        <p class="text" style="top: 40%; right: 65%"> secoundsoul123@gmail.com</p>
-        <pre class="text" style="top: 50%; right: 70%"> 
-            Monday to Friday:
-            10Am to 5 Pm
-            Saturday:
-            10Am to 3Pm
-        </pre>
-        <p class="text" style="top: 30%; right: 50%"> About us</p>
-        <p class="text" style="top: 40%; right: 50%">Privacy Policy </p>
-        
-        <p class="text" style="top: 30%; right: 30%"> Contact us</p>
-        <p class="text" style="top: 40%; right: 30%"> FAQs</p>
-        
-
-    <hr style="
-        position: absolute;
-        top: 20%;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 60%; 
-        border: none;
-        height: 2px;
-        background-color: black;
-    ">
-</div>
     
+    <div class="footer-wrapper">
+
+    <img class="footer-bg" src="https://i.postimg.cc/sxPL9xK8/whitebg.jpg">
+    <div class="footer">
+        <div>
+            <p>About us</p>
+            <p>03123456789</p>
+            <p>secoundsoul@gmail.com</p>
+            <p>monday to friday:</p>
+            <p>10 Am to 5 Pm</p>
+            <p>Saturday</p>
+            <p>10Am to 3 Pm</p>
+        </div>
+        <div>
+            <p>Information</p>
+            <p>About us</p>
+            <p>Privacy policy</p>
+        </div>
+        <div>
+            <p>Customer care</p>
+            <p>Contact us</p>
+            <p>FAQs</p>
+        </div>
+
+    </div>
+
+
+</div>
+
+    
+
+   
 
 </footer>
     
