@@ -66,7 +66,7 @@
         
     <div style="display: flex; height: 100vh;">
     <div style="flex: 1; background-color: white;">
-        <form style="position: absolute; top: 0%; left:10%;width:60% ;height: 100vh ; border: 2px solid black; padding: 60px; border-radius: 10px;">
+        <form style="position: absolute; top: 0%; left:10%;width:60% ;height: 100vh ; border: 2px solid black; padding: 60px; border-radius: 10px;" onsubmit="submitOrder(event)">
             <p>Contact</p>
             <input type="text" placeholder=" Enter email or Phone Number" >
             <p>Delivery</p>
@@ -89,6 +89,7 @@
             <br>
             <br>
             <p>Payement Method</p>
+
            <label>
         <input type="radio" name="payment" value="cod" onclick="hideOnlineOptions()">
         Cash on Delivery
@@ -135,6 +136,15 @@ function showOnlineOptions() {
 
 function hideOnlineOptions() {
     document.getElementById("onlineMethods").style.display = "none";
+}
+function logPayment(method)
+{
+    console.log("user selected " + method);
+}
+function submitOrder(event)
+{
+    event.preventDefault();
+    alert("Your order has been submitted");
 }
 </script>
 </html>
