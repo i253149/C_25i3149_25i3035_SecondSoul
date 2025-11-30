@@ -56,33 +56,54 @@
         <br>
         <p style="position: absolute;top: 20%; left:40%; color: white;font-size: 20px;">Please login to your account</p>
         <h2 style="position: absolute; top: 30% ; left: 2%; translate: (-50,50); color:white; font-size: 70px;">Welcome</h2>
-        <form  style="position: absolute; top: 30%; left:40%; border: 2px solid white; padding: 60px; border-radius: 10px;">
-            <input type ="text" placeholder = "Username">
+        
+            <form id="loginForm" style="position: absolute; top: 30%; left:40%; border: 2px solid white; padding: 60px; border-radius: 10px;">
+            <input type="text" placeholder="Username" id="username">
+            <br><br><br>
+            <input type="password" placeholder="Password" id="password">
+            <br><br>
+            <p style="color: white;font-size: 80%;text-decoration: underline;">Forgot password?</p>
+            <br><br><br><br>
+            <button type="submit">Login</button>
+            <br><br>
+            <button type="button" id="googleLogin">Login with Google</button>
+            <br><br>
+            <button type="button" id="facebookLogin">Login with Facebook</button>
             <br>
-            <br>
-            <br>
-            <input type = "password" placeholder = "Password">
-            <br>
-            <br>
-            <p style="color: white;font-size: 80%;text-decoration: underline; ">Forgot password?</p>
-            <br>
-            <br>
-            <br>
-            <br>
-            <button type = "submit"> login</button>
-            <br>
-            <br>
-
-            <button type ="submit">Login with google</button>
-            <br>
-            <br>
-            <button type = "submitt"> Login with facebook</button>
-            <br>
-             <p style="font-size: 80%;">Dont have a account?</p>
-        <button type="submit">sign up</button>
+            <p style="font-size: 80%;">Don't have an account?</p>
+            <button type="button" id="signup">Sign up</button>
         </form>
 
        
     </div>
+    <script>
+        const form = document.getElementById('loginForm');
+        form.addEventListener('submit', function(e) {
+            e.preventDefault(); 
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            alert(`Hello ${username}, your login button was clicked!`);
+
+            console.log('Form submitted:');
+            console.log('Username:', username);
+            console.log('Password:', password);
+        });
+
+        document.getElementById('googleLogin').addEventListener('click', () => {
+            alert('Google login clicked!');
+            console.log('Google login button clicked');
+        });
+
+        document.getElementById('facebookLogin').addEventListener('click', () => {
+            alert('Facebook login clicked!');
+            console.log('Facebook login button clicked');
+        });
+
+        document.getElementById('signup').addEventListener('click', () => {
+            alert('Sign up clicked!');
+            console.log('Sign up button clicked');
+        });
+    </script>
 </body>
 </html>
