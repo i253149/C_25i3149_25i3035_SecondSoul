@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         hr{
+            border:0;height:1px; background-color:black;opacity:0.1
+        }
+        img {
+            width: 50px; height: auto;
+        }
+        div{
+            position:relative;
+        }
+        p{
+            font-size: 100%;
+            font-weight: bold;
+            color: white;
+        }
+
+    </style>
+    
+</head>
+<body style="background-color: rgb(159, 111, 162);">
+    <header>
+<form>
+    <input type = "text" placeholder = "Search" style="margin-left: 40%; text-align:center; width:300px;height:25px">
+</form>
+
+<div>
+    <a href="homepage.html">
+        <img src="https://i.postimg.cc/gcXWh0G4/sslogo.png" style=" width:8%;">
+    </a>
+    
+<a href="login.html" style="position:absolute;top:1%;right:5%; text-decoration: none; color:white; font-size: 50%;">
+    <img src = "https://i.postimg.cc/3JtHG0PK/Profile-Icon-Silhouette-PNG-Transparent-Avatar-Icon-Profile-Icon-Member-Login-Vector-Isolated-Logi.png" >
+</a>
+<a href="https://www.google.com/">
+    <img src="https://i.postimg.cc/8z8WKzcY/shoppingcart.png" style="position: absolute; top:1% ; right:2% ;"> 
+</a>
+
+</div>
+<hr>
+</header>
+
+    <div style="position: relative;">
+        <img src="https://i.postimg.cc/VNM9Rbzr/Classic_Check_Fabric.png" style="width: 30%;">
+        
+        <p style="position:absolute; top:10%; left: 40%;color: white; font-size:30px ;"> Sign up</p>
+        <br>
+        
+        <h2 style="position: absolute; top: 30% ; left: 2%; translate: (-50,50); color:white; font-size: 70px;">Welcome</h2>
+        
+            <form id="SigninForm" style="position: absolute; top: 30%; left:40%; border: 2px solid white; padding: 60px; border-radius: 10px;">
+                <input type="text" placeholder="Full Name" id="name">
+                <br><br><br>
+            <input type="text" placeholder="email" id="email">
+            <br><br><br>
+
+            <input type="text" placeholder="Username" id="username">
+            <br><br><br>
+            <input type="password" placeholder="Password" id="password">
+            <br><br>
+            <br><br><br><br>
+            <button type="submit" id="signup">Sign Up</button>
+            <br><br>
+            <button type="button" id="googlesignin">Sign up with Google</button>
+            <br><br>
+            <button type="button" id="facebooksignin">Sign up with Facebook</button>
+            <br>
+        </form>
+
+       
+    </div>
+    <script>
+        const form = document.getElementById('loginForm');
+
+        document.getElementById('googlesignin').addEventListener('click', () => {
+            alert('Google sign in clicked!');
+            console.log('Google sign in button clicked');
+        });
+
+        document.getElementById('facebooksignin').addEventListener('click', () => {
+            alert('Facebook login clicked!');
+            console.log('Facebook login button clicked');
+        });
+
+        document.getElementById('signup').addEventListener('click', () => {
+            alert('Sign up clicked!');
+            console.log('Sign up button clicked');
+        });
+    </script>
+</body>
+</html>

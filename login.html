@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         hr{
+            border:0;height:1px; background-color:black;opacity:o.1
+        }
+        img {
+            width: 50px; height: auto;
+        }
+        div{
+            position:relative;
+        }
+        p{
+            font-size: 100%;
+            font-weight: bold;
+            color: white;
+        }
+
+    </style>
+    
+</head>
+<body style="background-color: rgb(159, 111, 162);">
+    <header>
+<form>
+    <input type = "text" placeholder = "Search" style="margin-left: 40%; text-align:center; width:300px;height:25px">
+</form>
+
+<div>
+    <a href="homepage.html">
+        <img src="https://i.postimg.cc/gcXWh0G4/sslogo.png" style=" width:8%;">
+    </a>
+    
+<a href="login.html" style="position:absolute;top:1%;right:5%; text-decoration: none; color:white; font-size: 50%;">
+    <img src = "https://i.postimg.cc/3JtHG0PK/Profile-Icon-Silhouette-PNG-Transparent-Avatar-Icon-Profile-Icon-Member-Login-Vector-Isolated-Logi.png" >
+</a>
+<a href="https://www.google.com/">
+    <img src="https://i.postimg.cc/8z8WKzcY/shoppingcart.png" style="position: absolute; top:1% ; right:2% ;"> 
+</a>
+
+</div>
+<hr>
+</header>
+
+    <div style="position: relative;">
+        <img src="https://i.postimg.cc/VNM9Rbzr/Classic_Check_Fabric.png" style="width: 30%;">
+        <a href="homepage.html">
+            
+            <p style="position:absolute; top:10%; left:40%; color:white; font-size:30px;">Login</p>
+
+        </a>
+        <p style="position:absolute; top:10%; left: 40%;color: white; font-size:30px ;"> Login</p>
+        <br>
+        <p style="position: absolute;top: 20%; left:40%; color: white;font-size: 20px;">Please login to your account</p>
+        <h2 style="position: absolute; top: 30% ; left: 2%; translate: (-50,50); color:white; font-size: 70px;">Welcome</h2>
+        
+            <form id="loginForm" style="position: absolute; top: 30%; left:40%; border: 2px solid white; padding: 60px; border-radius: 10px;">
+            <input type="text" placeholder="Username" id="username">
+            <br><br><br>
+            <input type="password" placeholder="Password" id="password">
+            <br><br>
+            <p style="color: white;font-size: 80%;text-decoration: underline;">Forgot password?</p>
+            <br><br><br><br>
+            <button type="submit">Login</button>
+            <br><br>
+            <button type="button" id="googleLogin">Login with Google</button>
+            <br><br>
+            <button type="button" id="facebookLogin">Login with Facebook</button>
+            <br>
+            <p style="font-size: 80%;">Don't have an account?</p>
+            <a href="signup.html" style="color: white;">
+                sign up
+
+            </a>
+            
+        </form>
+
+       
+    </div>
+    <script>
+        
+        document.getElementById('googleLogin').addEventListener('click', () => {
+            alert('Google login clicked!');
+            console.log('Google login button clicked');
+        });
+
+        document.getElementById('facebookLogin').addEventListener('click', () => {
+            alert('Facebook login clicked!');
+            console.log('Facebook login button clicked');
+        });
+    </script>
+</body>
+</html>
