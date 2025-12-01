@@ -5,21 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-         hr{
-            border:0;height:1px; background-color:black;opacity:0.1;
-        }
-        img {
-            width: 50px; height: auto;
-        }
-        div{
-            position:relative;
-        }
-        p{
-            font-size: 100%;
-            font-weight: bold;
-            color: black;
-        }
-       
+        
 
 .search-bar {
     width: 300px;
@@ -31,26 +17,45 @@
     text-align: center;
     display: block;
 }
-.text{
-            position:absolute; font-weight: bold;font-family: 'judson';color:black
+hr{
+            border:0;height:5px; background-color:white;opacity:0.1
+        }
+        img {
+            width: 25px; height: auto;
+        }
+         div{ 
+            position:relative;
+        } 
+        p{
+            font-size: 100%;
+            font-weight: bold;
+            color: black;
+        }
+        .text{
+            position:absolute; font-weight: bold;font-family: 'judson';color:black;
 
         }
         .footer-wrapper {
-            width: 100%;text-align: center;
+            position: relative;text-align: left;
         }
         .footer-bg {
-        width: 70%;height: 40vh;display: block;margin: 0 auto;
+        width: 100%;height: 350px;display: block;margin: 0 auto; position: static; clear: both, object-fit = cover;
         }
         .container{
             display:flex; justify-content: flex-start;margin-top:20px;text-align: center;
         }
-       .footer {
-        left: 50%;transform: translateX(-50%);width: 60%;display: flex;justify-content: space-between;text-align: left; }
+       .footer {position: absolute;bottom: 40px;left: 50%;transform: translateX(-50%);width: 60%;display: flex;justify-content: space-between;
+}
+.footer-wrapper {
+    position: relative; margin-top: 300px; 
+}
     </style>
 </head>
 <body style="background-color:#B087B2;">
-    <header>
-
+     <header>
+<!-- <form> -->
+    <!-- <input type = "text" placeholder = "Search" style="margin-left: 40%; text-align:center; width:300px;height:25px"> -->
+<!-- </form> -->
 
 <div>
     <a href="homepage.html">
@@ -68,7 +73,7 @@
 <hr>
 </header>
     <input type="text" placeholder="Search" class="search-bar">
-    <footer>
+   <footer>
   <div class="footer-wrapper">
 
     <img class="footer-bg" src="https://i.postimg.cc/sxPL9xK8/whitebg.jpg">
@@ -94,8 +99,9 @@
         </div>
 
     </div>
-</div>
 
+
+</div>
 </footer>
 </body>
 </html>
