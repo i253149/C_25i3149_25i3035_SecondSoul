@@ -6,69 +6,51 @@
     <title>Document</title>
     <style>
          hr{
-            border:0;height:1px; background-color:black;opacity:o.1
+            border:0;height:1px; background-color:black;opacity:0.1;
         }
         img {
             width: 50px; height: auto;
         }
-        div{ 
-             position:relative; 
-         }
+        div{
+            position:relative;
+        }
         p{
             font-size: 100%;
             font-weight: bold;
             color: black;
         }
-        .text{
+       
+
+.search-bar {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 50px auto;
+    text-align: center;
+    display: block;
+}
+.text{
             position:absolute; font-weight: bold;font-family: 'judson';color:black
 
         }
         .footer-wrapper {
-            position: relative;text-align: center;
+            width: 100%;text-align: center;
         }
         .footer-bg {
-        width: 70%;height: 40vh;display: block;margin: 0 auto; position: static; clear: both;
+        width: 70%;height: 40vh;display: block;margin: 0 auto;
         }
         .container{
             display:flex; justify-content: flex-start;margin-top:20px;text-align: center;
         }
        .footer {
-        position: relative;top: 10%;left: 50%;transform: translateX(-50%);width: 60%;display: flex;justify-content: space-between;text-align: left;}
-.about-para {
- position: relative;
- height: 500px;
-}
-.about-para .para {
-    position: absolute;
-  width: 50%;
-  text-align: left;
-  top: 50px;
-  left: 0%;
-}
-.about-para img {
-    position: absolute;
-    top: 0%;
-    right: 0%;
-  width: 50%;
-  height: 500px;
-}
-.about-para .tag {
-   position: relative;
-    left: 0%;
-    top: 10;
-  font-size: 20px;
-  font-weight: bold;
-  text-align: left;
-  margin-bottom: 5px;
-}
-</style>
-
+        left: 50%;transform: translateX(-50%);width: 60%;display: flex;justify-content: space-between;text-align: left; }
+    </style>
 </head>
 <body style="background-color:#B087B2;">
-<header>
-<form>
-    <input type = "text" placeholder = "Search" style="margin-left: 40%; text-align:center; width:300px;height:25px">
-</form>
+    <header>
+
 
 <div>
     <a href="homepage.html">
@@ -85,16 +67,10 @@
 </div>
 <hr>
 </header>
-<div class="about-para">
-<p class="tag">WE WANT TO MAKE YOU LOOK GOOD TO FEEL GOOD</p>
-<p class="para">Welcome to our thrift haven — where fashion finds a second chance and style meets sustainability! We’re a passionate team of thrift lovers dedicated to giving pre-loved clothes a new life. Our mission is simple: to make sustainable fashion accessible, affordable, and fun for everyone. From vintage gems to trendy staples, every piece in our collection has its own story — and we can’t wait for you to make it part of yours. Whether you’re hunting for something unique or just love the thrill of a good find, we’re here to make your shopping experience both eco-friendly and exciting!</p>
-<img src="./images/aboutus.png">
-</div>
-
-
-<footer>
-
+    <input type="text" placeholder="Search" class="search-bar">
+    <footer>
   <div class="footer-wrapper">
+
     <img class="footer-bg" src="https://i.postimg.cc/sxPL9xK8/whitebg.jpg">
     <div class="footer">
         <div>
@@ -116,15 +92,11 @@
             <p>Contact us</p>
             <p>FAQs</p>
         </div>
-        
+
     </div>
 
 
 </div>
-
-    
-
-   
 
 </footer>
 </body>
