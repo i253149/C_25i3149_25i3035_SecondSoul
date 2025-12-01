@@ -81,7 +81,7 @@
 <p>Size:| S |  | M |  | L |  | XL |</p>
 <p>Color: Green</p>
 </div>
-<button>Add to bag</button>
+<button id="addToBagBtn">Add to bag</button>
 <br>
 <br>
 <button>Buy now</button>
@@ -128,5 +128,11 @@ Actual product colour may vary slightly from the image.</pre>
 
 </div>
 </footer>
+<script>
+    document.getElementById("addToBagBtn").onclick = function () {
+        alert("Added to cart!");
+    };
+</script>
+
 </body>
 </html>
