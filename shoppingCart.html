@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         hr{
+            border:0;height:5px; background-color:white;opacity:0.1
+        }
+        img {
+            width: 25px; height: auto;
+        }
+         div{ 
+            position:relative;
+        } 
+        p{
+            font-size: 100%;
+            font-weight: bold;
+            color: black;
+        }
+        .text{
+            position:absolute; font-weight: bold;font-family: 'judson';color:black;
+
+        }
+        .footer-wrapper {
+            position: relative;text-align: center;
+        }
+        .footer-bg {
+        width: 100%;height: 350px;display: block;margin: 0 auto; position: static; clear: both, object-fit = cover;
+        }
+        .container{
+            display:flex; justify-content: flex-start;margin-top:20px;text-align: center;
+        }
+       .footer {position: absolute;bottom: 40px;left: 50%;transform: translateX(-50%);width: 60%;display: flex;justify-content: space-between;
+}
+.footer-wrapper {
+    position: relative; margin-top: 100px; 
+}
+        .cart img{
+     position:absolute;
+    top: 20%;
+    left : 0%;
+  /* width: 30%; */
+  height: 350px;}
+  .textcart {
+    text-align: left;
+    margin-top: 200px;  
+    margin-left: 30%;
+}
+  .row {
+    display: flex;
+    align-items: center; 
+    gap: 15px; 
+}
+
+.btn {
+    padding: 5px 12px;
+    background-color: #835C8E;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.txt {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0; 
+}
+.shopbtn{background-color: #835C8E;margin-left: 40%;width: 100px;}
+.checkbtn{background-color: #835C8E;margin-left: 40%;width: 100px;}
+/* Fix distorted product image */
+.cart img {
+    width: auto !important;
+    height: 350px !important;
+    z-index: 1;
+}
+
+/* Keep header visible */
+h1 {
+    position: relative;
+    z-index: 10;
+}
+
+    </style>
+</head>
+<body style="background-color: #B087B2;">
+    <header>
+<form>
+    <input type = "text" placeholder = "Search" style="margin-left: 40%; text-align:center; width:300px;height:25px">
+</form>
+
+<div>
+    <a href="homepage.html">
+        <img src="https://i.postimg.cc/gcXWh0G4/sslogo.png" style=" width:8%;">
+    </a>
+    
+<a href="login.html" style="position:absolute;top:1%;right:5%; text-decoration: none; color:white; font-size: 50%;">
+    <img src = "https://i.postimg.cc/3JtHG0PK/Profile-Icon-Silhouette-PNG-Transparent-Avatar-Icon-Profile-Icon-Member-Login-Vector-Isolated-Logi.png" >
+</a>
+<a href="https://www.google.com/">
+    <img src="https://i.postimg.cc/8z8WKzcY/shoppingcart.png" style="position: absolute; top:1% ; right:2% ;"> 
+</a>
+
+</div>
+<hr>
+</header>
+    <h1>Shopping Cart</h1>
+    <div class="cart">
+        <img src="images/STAND SWEATER.png ">
+    </div>
+    <div class="textcart">
+        <h2>knitted sweater</h2>
+        <br>
+        <p>Size:M</p>
+        <p>Colour:White</p>
+        <p>Quantity:</p>
+        <div class="row">
+        <button class="btn1">-</button>
+       <p class="txt">1</p>
+       <button class="btn2">+</button>
+        </div>
+        <p></p>
+    </div>
+    <p>Item Summary</p>
+    <p>Product Price: 999 PKR</p>
+    <p>Tax: 100 PKR</p>
+    <p>Delivery: 200(Standard)</p>
+    <p>Subtotal: 1299 PKR</p>
+    <br>
+    <div>
+        <button class="shopbtn">Shop More</button>
+    <br>
+    <br>
+    <button class="checkbtn">Checkout</button>
+    </div>
+    <footer>
+  <div class="footer-wrapper">
+
+    <img class="footer-bg" src="https://i.postimg.cc/sxPL9xK8/whitebg.jpg">
+    <div class="footer">
+        <div>
+            <p>About us</p>
+            <p>03123456789</p>
+            <p>secoundsoul@gmail.com</p>
+            <p>monday to friday:</p>
+            <p>10 Am to 5 Pm</p>
+            <p>Saturday</p>
+            <p>10Am to 3 Pm</p>
+        </div>
+        <div>
+            <p>Information</p>
+            <p>About us</p>
+            <p>Privacy policy</p>
+        </div>
+        <div>
+            <p>Customer care</p>
+            <p>Contact us</p>
+            <p>FAQs</p>
+        </div>
+
+    </div>
+
+
+</div>
+</footer>
+</body>
+</html>

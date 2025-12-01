@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .underline-input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid white;   /* the line you want */
+    background: transparent;
+    margin-bottom: 20px;
+    padding: 8px 0;
+    outline: none;
+    color: white;  
+}
+        h2{ text-align: center; color: white;}
+    /* div{width: 300;margin-left: 50px; color: white;} */
+    hr{color: white;}
+    button{background-color: #835C8E;width: 8%;}
+     hr{
+            border:0;height:5px; background-color:white;opacity:0.1
+        }
+        img {
+            width: 25px; height: auto;
+        }
+        /* div{
+            position:relative;
+        } */
+        p{
+            font-size: 100%;
+            font-weight: bold;
+            color: black;
+        }
+        .text{
+            position:absolute; font-weight: bold;font-family: 'judson';color:black;
+
+        }
+        .footer-wrapper {
+            position: relative;text-align: center;
+        }
+        .footer-bg {
+        width: 100%;height: 350px;display: block;margin: 0 auto; position: static; clear: both, object-fit = cover;
+        }
+        .container{
+            display:flex; justify-content: flex-start;margin-top:20px;text-align: center;
+        }
+       .footer {position: absolute;bottom: 40px;left: 50%;transform: translateX(-50%);width: 60%;display: flex;justify-content: space-between;
+}
+
+       .info{color: white;}
+       .questions{ color: white;}
+       /* body {
+    padding-bottom: 500px; 
+} */
+.footer-wrapper {
+    position: relative; margin-top: 100px; 
+}
+
+    </style>
+</head>
+<body style="background-color:#B087B2;">
+    <header>
+<form>
+    <input type = "text" placeholder = "Search" style="margin-left: 40%; text-align:center; width:300px;height:25px">
+</form>
+
+<div>
+    <a href="homepage.html">
+        <img src="https://i.postimg.cc/gcXWh0G4/sslogo.png" style=" width:8%;">
+    </a>
+    
+<a href="login.html" style="position:absolute;top:1%;right:5%; text-decoration: none; color:white; font-size: 50%;">
+    <img src = "https://i.postimg.cc/3JtHG0PK/Profile-Icon-Silhouette-PNG-Transparent-Avatar-Icon-Profile-Icon-Member-Login-Vector-Isolated-Logi.png" >
+</a>
+<a href="https://www.google.com/">
+    <img src="https://i.postimg.cc/8z8WKzcY/shoppingcart.png" style="position: absolute; top:1% ; right:2% ;"> 
+</a>
+
+</div>
+<hr>
+</header>
+    
+
+    <form style="margin-top: 150px; width:70%; left:10%; border: 2px solid white; padding: 60px; border-radius: 10px; position: relative;">
+        <h2>Contact us</h2>
+        <div class="info">
+
+    <label>Name</label>
+    <input type="text" class="underline-input">
+    <br>
+    <br>
+    <br>
+
+
+    <label>Email</label>
+    <input type="email" class="underline-input">
+    <br>
+    <br>
+    <br>
+
+    <label>Message</label>
+    <textarea class="underline-input textarea"></textarea>
+    <br>
+    <br>
+
+</div>
+    
+         <button style="margin-left: 50%">Send</button>
+    <div class="questions">
+        <p style="color: white;">FAQs</p>
+        <pre>Q. Do I need to have an account to shop with you?
+A. Order can be placed without making an account. But, if you set up an account, 
+then you do not have to enter your details every time you shop with us.
+
+Q. How will I retrieve my password if I forget it?
+A. You can click on ‘Forgot Password’ available at the sign-in page. 
+Enter your email address and click on ‘Submit’. An email will be sent to you to recover your password.
+
+Q. What payment method can I use?
+A. We offer the following payment methods:
+Cash on delivery
+Credit card 
+Q. What shipping methods are available?
+A. We use TCS for shipping in Pakistan.
+
+Q. Is my personal data kept secured?
+A. Yes, your data is secure with us.
+
+Q. Why should I know about cookies?
+A. Cookies are small text files. We use cookies to collect information about use of our online services.
+
+Q. Will I receive an email every time I place an order with you?
+A. After confirmation of the order from the website, you will receive an email with order number and detail.</pre>
+    </div>
+
+    </form>
+    <footer>
+  <div class="footer-wrapper">
+
+    <img class="footer-bg" src="https://i.postimg.cc/sxPL9xK8/whitebg.jpg">
+    <div class="footer">
+        <div>
+            <p>About us</p>
+            <p>03123456789</p>
+            <p>secoundsoul@gmail.com</p>
+            <p>monday to friday:</p>
+            <p>10 Am to 5 Pm</p>
+            <p>Saturday</p>
+            <p>10Am to 3 Pm</p>
+        </div>
+        <div>
+            <p>Information</p>
+            <p>About us</p>
+            <p>Privacy policy</p>
+        </div>
+        <div>
+            <p>Customer care</p>
+            <p>Contact us</p>
+            <p>FAQs</p>
+        </div>
+
+    </div>
+
+
+</div>
+
+    
+
+   
+
+</footer>
+
+    
+   
+</body>
+</html>
