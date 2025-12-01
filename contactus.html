@@ -16,39 +16,48 @@
     color: white;  
 }
         h2{ text-align: center; color: white;}
-    div{width: 300;margin-left: 50px; color: white;}
+    /* div{width: 300;margin-left: 50px; color: white;} */
     hr{color: white;}
     button{background-color: #835C8E;width: 8%;}
      hr{
             border:0;height:5px; background-color:white;opacity:0.1
         }
         img {
-            width: 50px; height: auto;
+            width: 25px; height: auto;
         }
-        div{
+        /* div{
             position:relative;
-        }
+        } */
         p{
             font-size: 100%;
             font-weight: bold;
-            color: white;
+            color: black;
         }
         .text{
-            position:absolute; font-weight: bold;font-family: 'judson';color:white
+            position:absolute; font-weight: bold;font-family: 'judson';color:black;
 
         }
         .footer-wrapper {
             position: relative;text-align: center;
         }
         .footer-bg {
-        width: 70%;height: 40vh;display: block;margin: 0 auto; position: static; clear: both;
+        width: 100%;height: 350px;display: block;margin: 0 auto; position: static; clear: both, object-fit = cover;
         }
         .container{
             display:flex; justify-content: flex-start;margin-top:20px;text-align: center;
         }
-       .footer {
-        position: relative;top: 10%;left: 50%;transform: translateX(-50%);width: 60%;display: flex;justify-content: space-between;text-align: left;}
+       .footer {position: absolute;bottom: 40px;left: 50%;transform: translateX(-50%);width: 60%;display: flex;justify-content: space-between;
+}
+
        .info{color: white;}
+       .questions{ color: white;}
+       /* body {
+    padding-bottom: 500px; 
+} */
+.footer-wrapper {
+    position: relative; margin-top: 100px; 
+}
+
     </style>
 </head>
 <body style="background-color:#B087B2;">
@@ -74,7 +83,7 @@
 </header>
     
 
-    <form style="position: absolute; top: 30%;width:70%; left:10%; border: 2px solid white; padding: 60px; border-radius: 10px;">
+    <form style="margin-top: 150px; width:70%; left:10%; border: 2px solid white; padding: 60px; border-radius: 10px; position: relative;">
         <h2>Contact us</h2>
         <div class="info">
 
@@ -99,8 +108,8 @@
 </div>
     
          <button style="margin-left: 50%">Send</button>
-    <div>
-        <p>FAQs</p>
+    <div class="questions">
+        <p style="color: white;">FAQs</p>
         <pre>Q. Do I need to have an account to shop with you?
 A. Order can be placed without making an account. But, if you set up an account, 
 then you do not have to enter your details every time you shop with us.
