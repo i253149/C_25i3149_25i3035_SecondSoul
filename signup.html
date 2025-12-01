@@ -6,7 +6,7 @@
     <title>Document</title>
     <style>
          hr{
-            border:0;height:1px; background-color:black;opacity:o.1
+            border:0;height:1px; background-color:black;opacity:0.1
         }
         img {
             width: 50px; height: auto;
@@ -47,49 +47,49 @@
 
     <div style="position: relative;">
         <img src="https://i.postimg.cc/VNM9Rbzr/Classic_Check_Fabric.png" style="width: 30%;">
-        <a href="homepage.html">
-            
-            <p style="position:absolute; top:10%; left:40%; color:white; font-size:30px;">Login</p>
-
-        </a>
-        <p style="position:absolute; top:10%; left: 40%;color: white; font-size:30px ;"> Login</p>
+        
+        <p style="position:absolute; top:10%; left: 40%;color: white; font-size:30px ;"> Sign up</p>
         <br>
-        <p style="position: absolute;top: 20%; left:40%; color: white;font-size: 20px;">Please login to your account</p>
+        
         <h2 style="position: absolute; top: 30% ; left: 2%; translate: (-50,50); color:white; font-size: 70px;">Welcome</h2>
         
-            <form id="loginForm" style="position: absolute; top: 30%; left:40%; border: 2px solid white; padding: 60px; border-radius: 10px;">
+            <form id="SigninForm" style="position: absolute; top: 30%; left:40%; border: 2px solid white; padding: 60px; border-radius: 10px;">
+                <input type="text" placeholder="Full Name" id="name">
+                <br><br><br>
+            <input type="text" placeholder="email" id="email">
+            <br><br><br>
+
             <input type="text" placeholder="Username" id="username">
             <br><br><br>
             <input type="password" placeholder="Password" id="password">
             <br><br>
-            <p style="color: white;font-size: 80%;text-decoration: underline;">Forgot password?</p>
             <br><br><br><br>
-            <button type="submit">Login</button>
+            <button type="submit" id="signup">Sign Up</button>
             <br><br>
-            <button type="button" id="googleLogin">Login with Google</button>
+            <button type="button" id="googlesignin">Sign up with Google</button>
             <br><br>
-            <button type="button" id="facebookLogin">Login with Facebook</button>
+            <button type="button" id="facebooksignin">Sign up with Facebook</button>
             <br>
-            <p style="font-size: 80%;">Don't have an account?</p>
-            <a href="signup.html" style="color: white;">
-                sign up
-
-            </a>
-            
         </form>
 
        
     </div>
     <script>
-        
-        document.getElementById('googleLogin').addEventListener('click', () => {
-            alert('Google login clicked!');
-            console.log('Google login button clicked');
+        const form = document.getElementById('loginForm');
+
+        document.getElementById('googlesignin').addEventListener('click', () => {
+            alert('Google sign in clicked!');
+            console.log('Google sign in button clicked');
         });
 
-        document.getElementById('facebookLogin').addEventListener('click', () => {
+        document.getElementById('facebooksignin').addEventListener('click', () => {
             alert('Facebook login clicked!');
             console.log('Facebook login button clicked');
+        });
+
+        document.getElementById('signup').addEventListener('click', () => {
+            alert('Sign up clicked!');
+            console.log('Sign up button clicked');
         });
     </script>
 </body>
